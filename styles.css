@@ -1,0 +1,148 @@
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 50%);
+  --black: hsl(0, 0%, 7%);
+  --height: 531px;
+}
+
+*,
+*::before,
+*::after {
+  font-family: "Figtree";
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--yellow);
+  height: 100vh;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.maincard {
+  background-color: var(--white);
+  height: var(--height);
+  width: calc(var(--height) * 0.7401);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 20px;
+  padding: 27px;
+  border: 1px solid var(--black);
+  box-shadow: 10px 10px var(--black);
+}
+
+.postimage {
+  border-radius: 7px;
+}
+
+.posttype {
+  background-color: var(--yellow);
+  width: fit-content;
+  font-weight: 800;
+  font-size: 16px;
+  padding: 7px 15px;
+  border-radius: 5px;
+}
+
+.postlink {
+  font-weight: 800;
+  font-size: 27px;
+}
+
+.postdescription {
+  color: var(--grey);
+  font-size: 16px;
+  word-spacing: 4px;
+  line-height: 23px;
+}
+
+.postuser {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.postuser img {
+  height: 55px;
+}
+
+.postuser span {
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+a:hover {
+  color: var(--yellow);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .maincard {
+    margin-top: 40px;
+    width: 320px;
+    padding: 22px;
+    height: 420px;
+  }
+
+  .postlink {
+    font-size: 20px;
+  }
+
+  .postdescription {
+    font-size: 15px;
+    line-height: 20px;
+    word-spacing: normal;
+  }
+
+  .postuser img {
+    height: 45px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .maincard {
+    margin-top: 40px;
+    width: 240px;
+    height: 400px;
+  }
+
+  .postlink {
+    font-size: 16px;
+  }
+
+  .postdescription {
+    font-size: 12px;
+    line-height: 3vh;
+    word-spacing: normal;
+  }
+}
+
+footer {
+  position: absolute;
+  bottom: 2px;
+  margin-top: 2px;
+  background-color: black;
+  width: 100%;
+}
+
+.attribution {
+  font-size: 1.5vh;
+  color: hsl(0, 0%, 100%);
+
+  font-weight: 800;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.attribution a:hover {
+  color: var(--yellow);
+}
