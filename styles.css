@@ -145,4 +145,5 @@ footer {
 
 .attribution a:hover {
   color: var(--yellow);
+  cursor: pointer;
 }
